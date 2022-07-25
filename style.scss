@@ -1,0 +1,513 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    color: #6c6c6c;
+    font: normal 14px/22px Helvetica Neue,sans-serif,Arial;
+}
+.big{
+    max-width: 1200px;
+    padding-left: 8%;
+}
+header{
+    padding-left: 2%;
+    margin-top: 19px;
+    padding-top: 11px;
+    margin-bottom: 20px;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+header .hud{
+    display: flex;
+    
+}
+header .hud .top-logo .logo img{
+    height: auto;
+    width: 119px;
+    cursor: pointer;
+}
+header .hud .item{
+    display: flex;
+    margin-left: 20px;
+    height: 45px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+header .hud .item .items{
+    max-width: 100%;
+    display: inline-block;
+    width: 120px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+header .hud .item .items .drop{
+    display: none;
+    position: absolute;
+    top: 35px;
+}
+header .hud .item .items:hover .drop{
+    display: block;
+}
+header .hud .item .items .drop .dropper{
+    display: flex;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 5px 22px rgb(0 0 0 / 15%);
+}
+header .hud .item .items .drop ul{
+    color: black;
+    display: flex;
+}
+header .hud .item .items .drop ul li{
+    list-style: none;
+    display: flex;
+}
+header .hud .item .items .drop ul li p{
+    font-size: .08756;
+    font-weight: 550;
+    padding-left: 3px;
+    font-size: 16px;
+}
+header .hud .item .items .drop ul li::after{
+    content: "";
+    background-color: #297cf0;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    left: -6px;
+    top: 20px;
+}
+header .hud .item .items .drop ul li p:hover{
+    color: #297cf0;
+    opacity: 1;
+}
+header .hud .item .items p:hover{
+    text-shadow: 1px 1px 1px hsl(0deg 0% 100% / 0%);
+}
+header .hud .item .items-1{
+    max-width: 100%;
+    width: 60px;
+    display: flex;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+header .hud .item .items-1 svg:hover{
+    color: #297cf0;
+}
+header .hud .item .items-1 svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+header .hud .item .items  p{
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .hud .item .items p i{
+    font-weight: 900;
+    font-size: 12px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+.big header .hud .baruun-deed{
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 26% 20% 50%;
+    grid-template-rows: 30% 20%;
+    gap: 7px;
+    margin-left: 3%;
+}
+.big header .hud .baruun-deed .child{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.big header .hud .baruun-deed .child-1{
+    margin-left: 42px;
+}
+.big header .hud .baruun-deed .child-3{
+    margin-left: 30px;
+}
+.big header .hud .baruun-deed .child-5{
+    margin-left: 16px;
+}
+.big header .hud .baruun-deed .child .thing{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+    height: fit-content;
+    cursor: pointer;
+}
+.big header .hud .baruun-deed .child .thing .wasaa h2{
+    font-size: 17px;
+    margin-top: 5px;
+    color: #000;
+    font-weight: 500;
+}
+.big header .hud .baruun-deed .child h1{
+    font-size: 12px!important;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    color: #000;
+    font-weight: 400;
+}
+.big header .hud .baruun-deed .child .thing .nar .money{
+    color: green;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23px;
+}
+.big header .hud .baruun-deed .child .thing span{
+    font-size: 25px;
+    line-height: 25px;
+    color: #000;
+}
+.big header .hud .baruun-deed .child .thing .nar{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}    
+.big header .hud .baruun-deed .child .thing .nar img{
+    height: auto;
+}
+.big header .hud .item .items-1 .searcher{
+    background: #fff;
+    border: 1px solid #297cf0;
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    padding: 0;
+    border-radius: 5px;
+    display: none;
+    width: 94%;
+}
+.big header .hud .item .items-1 .searcher .input .icon{
+    display: flex;
+    align-items: center;
+}
+.big header .hud .item .items-1 .searcher .input{
+    display: flex;
+}
+.big header .hud .item .items-1 .searcher .input input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    display: flex;
+    border: none;
+    padding-right: 40px;
+    font-size: 16px;
+}
+.big header .hud .item .items-1 label .close{
+    font-size: .875rem;
+    display: none;
+    cursor: pointer;
+}
+.big header .hud .item .items-1 #check:checked ~label svg{
+    display: none;
+}
+#check{
+    display: none;
+}
+.big header .mobile-search{
+    display: none;
+}
+.big header .mobile-search .wot{
+    display: flex;
+}
+.big header .hud .mobile-2{
+    display: none;
+}
+.big main .batiin-ger{
+    display: flex;
+    background: linear-gradient(90deg, #f4f4f4 7%, hsla(0,0%,100%,.220348) 17%);
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+.big main .batiin-ger .bataa{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+}
+.big main .batiin-ger .bataa .zurag{
+    width: 50%;
+    transition: all 3s ease-out;
+}
+.big main .batiin-ger .bataa img{
+    height: 385px;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.big main .batiin-ger .bataa .zurag p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 61%;
+}
+.big main .batiin-ger .bataa .zurag:hover p{
+    display: block;
+}
+.big main .batiin-ger .bataa .zurag:hover img{
+    opacity: 1;
+    background: rgba(34,34,34,.5);
+}
+.big main .batiin-ger .bataa .text h2{
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px!important;
+    line-height: 20px!important;
+    color: #000;
+    cursor: pointer;
+    margin-top: 10px;
+    opacity: 0.4;
+    margin-bottom: 30px!important;
+}
+.big main .batiin-ger .bataa .text{
+    width: 50%;
+    padding-right: 10%;
+    padding-left: 5%;
+}
+.big main .batiin-ger .bataa .text .toim{
+    width: 100%;
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+.big main .batiin-ger .bataa .text .toim .toimor{
+    width: 14%;
+    border-radius: 10px;
+    background-image: linear-gradient(-120deg,#e08100,#c90027);
+    background: linear-gradient(129deg,#c40097,#d6710b);
+    cursor: pointer;
+}
+.big main .batiin-ger .bataa .text .toim .toimor:hover{
+    width: 16%;
+    transition: all .2s;
+}
+.big main .batiin-ger .bataa .text .toim .toimor p{
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+}
+.big main .batiin-ger .bataa .text h1{
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    line-height: 36px;
+}
+.big main .batiin-ger .bataa .text .share{
+    gap: 5px;
+}
+.big main .batiin-ger .bataa .text .share .henbe{
+    width: 13%;
+    gap: 10px;
+    display: flex;
+    border-radius: 5px;
+    background-color: #f0efef;
+    border: 1px solid rgba(0,0, 0,0);
+    cursor: pointer;
+}
+.big main .batiin-ger .bataa .text .share .henbe i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.big main .batiin-ger .bataa .text .share .henbe:hover i{
+    animation: test 1s;
+}
+@keyframes test {
+    50%{
+        transform: rotate(45deg) scale(1.5);
+    }
+}
+.big header .hud .item .items-1 .item-1 #check:checked ~.searcher{
+    display: block;
+}
+.big header .hud .item .items-1 #check:checked ~label .close{
+    display: block;
+}
+@media screen and (max-width: 1115px){
+    .big header .hud .baruun-deed .child{
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .big header .hud .baruun-deed .child-1{
+        justify-content: right;
+    }
+    .big header{
+        padding-left: 0;
+    }
+    .big header .hud .baruun-deed .child .thing{
+        gap: 9px;
+    }
+    header .hud .item .items{
+        width: 100px;
+    }
+    header .hud .item .gogobulan{
+        width: 120px;
+    }
+    .big header .hud .baruun-deed{
+        grid-template-columns: 29% 20% 45%;
+        margin-left: 0;
+    }
+    header .hud .item .items-1{
+        width: 35px;
+    }
+    .big{
+        padding-left: 5%;
+    }
+}
+@media screen and (max-width: 960px){
+    .big header .hud .item .items{
+        display: none;
+    }
+    header{
+        max-width: 950px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .big{
+        max-width: 950px;
+    }
+    .big header .hud .baruun-deed{
+        grid-template-columns: 8% 5%;
+        gap: 10px;
+        display: none;
+    }
+    .big header .hud .baruun-deed .child .thing .nar .money{
+        display: none;
+    }
+    .big header .hud .baruun-deed .child .thing span{
+        display: none;
+    }
+    .big header .hud .baruun-deed .child .thing .wasaa .sup{
+        display: none;
+    }
+    .big header .hud .baruun-deed .child-1{
+        display: none;
+    }
+    .big header .hud .baruun-deed .child-2{
+        margin-left: 27px;
+    }
+    .big header .hud .baruun-deed .child-3{
+        margin-left: 10px;
+    }
+    .big header .hud .baruun-deed .child-4{
+        justify-content: left;
+    }
+    .big header .hud .items-1{
+        display: none;
+    }
+    .big header .mobile-search{
+        display: block;
+        width: 134px;
+        height: 55px;
+    }
+    .big header .mobile-search .sup{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .big header .mobile-search .sup-2{
+        border-left: 1px solid  rgba(0, 0, 0, .05);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .big header .hud .baruun-deed .child h1{
+        font-size: 12px;
+        font-weight: 400;
+        color: #000;
+        text-align: left;
+    }
+    .big header .hud .baruun-deed .child .thing .wasaa{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+    .big header .hud .baruun-deed .child .thing .wasaa h2{
+        font-weight: 500;
+    }
+    .big header .hud .baruun-deed .child .thing .nar img{
+        justify-content: left;
+    }
+    .big header .hud .mobile-2{
+        display: block;
+    }
+    .big header .mobile-search .wot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .big header .hud .mobile-2 .dotorh{
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, .06);
+        border-radius: 5px;
+    }
+    .big header .hud .mobile-2 .dotorh .neg{
+        display: flex;
+        gap: 20px;
+    }
+    .big header .hud .mobile-2 .dotorh .neg .child h1{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .big header .hud .mobile-2 .dotorh .hoyr{
+        display: flex;
+        justify-content: space-between;
+    }
+    .big header .hud .mobile-2 .dotorh .hoyr .child-2{
+        margin-left: 21px;
+    }
+    .big header .hud .mobile-2 .dotorh .hoyr .child-4{
+        margin-left: 10px;
+    }
+    .big header .hud .mobile-2 .dotorh .hoyr .child .thing{
+        display: flex;
+        gap: 5px;
+    }
+    .big header .hud .mobile-2 .dotorh .hoyr .child .thing .wasaa h2{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
